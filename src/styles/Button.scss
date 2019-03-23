@@ -1,24 +1,40 @@
 @import "Colors.scss";
 
 .button {
-    border: 0;
-    padding: 0;
+  border: 0;
+  padding: 0;
 
-    color: $color-text;
-    background-color: $button-color;
-    font-size: 20px;
-    width: 60px;
-    height: 60px;
-    margin: 5px;
-    text-align: center;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  color: $color-text;
+  background-color: $button-default;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    background-color: $button-default-hover;
+  }
 }
 
+.button-operator {
+  background-color: $button-blue;
+  color: $color-blue;
 
-.operand {
-    background-color: $button-blue;
+  &:hover {
+    background-color: $button-blue-hover;
+  }
+}
+
+.button-equal {
+  background-color: $button-red;
+  color: $color-red;
+
+  &:hover {
+    background-color: $button-red-hover;
+  }
 }

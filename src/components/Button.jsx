@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import classNames from "classnames";
 
 import "../styles/Button.scss";
 import "../styles/Colors.scss";
@@ -7,27 +8,17 @@ class Button extends Component {
     super(props);
     this.state = {};
   }
+
   render() {
     const { value, type } = this.props;
+    var stylesButton = classNames({
+      button: true,
+      "button-operator": type === "operand",
+      "button-equal": type === "equal"
+    });
     return (
       <div
-        className="button"
-        style={
-          {
-            backgroundColor:
-              type === "operand" 
-                ? "#eaf8f3" 
-                : type === "equal" 
-                ? "#f8dade" 
-                : null,
-            color:
-              type === "operand"
-                ? "#99dfc6"
-                : type === "equal"
-                ? "#ea8894"
-                : null
-          }
-        }
+        className={stylesButton}
         onClick={() => this.props.onClickItem(value)}
       >
         {value}

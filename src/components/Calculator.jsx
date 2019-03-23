@@ -99,17 +99,17 @@ class Calculator extends Component {
     }
     return this.performOperation(firstNumber, secondNumber, operator);
   }
-  
+
   render() {
     const { queue, result } = this.state;
     return (
-      <div class="calculator display-flex flex-column space-between">
-        <div className="display-calculator display-flex flex-column align-end flex-end margin-right-20 margin-top-auto margin-bottom-20">
+      <div className="calculator display-flex flex-column space-between">
+        <div className="display-calculator display-flex flex-column align-end flex-end margin-right-20 margin-left-20 margin-top-auto margin-bottom-20">
           <div className="history text-right">
-            {result.toString().length > 0 ? <div>{queue}</div> : null}
+            {result.length > 0 ? <div>{queue}</div> : null}
           </div>
           <div className="output-results text-right">
-            {result.toString().length > 0 ? (
+            {result.length > 0 ? (
               <div>{result}</div>
             ) : (
               <div>{queue}</div>
@@ -135,7 +135,7 @@ class Calculator extends Component {
               onClickItem={this.handleOnClick}
             />
             <Button
-              value={<i class="material-icons">keyboard_backspace</i>}
+              value={<i className="material-icons">keyboard_backspace</i>}
               type="operand"
               onClickItem={this.handleOnClick}
             />
