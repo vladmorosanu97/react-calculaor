@@ -1,0 +1,1 @@
+export var ButtonType = Object.freeze({"default":1, "operator":2, "equal":3})

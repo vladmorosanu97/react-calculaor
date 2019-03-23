@@ -3,6 +3,7 @@ import classNames from "classnames";
 
 import "../styles/Button.scss";
 import "../styles/Colors.scss";
+import { ButtonType } from "../models/buttonType";
 class Button extends Component {
   constructor(props) {
     super(props);
@@ -13,8 +14,8 @@ class Button extends Component {
     const { value, type } = this.props;
     var stylesButton = classNames({
       button: true,
-      "button-operator": type === "operand",
-      "button-equal": type === "equal"
+      "button-operator": type === ButtonType.operator,
+      "button-equal": type === ButtonType.equal
     });
     return (
       <div
