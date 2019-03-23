@@ -1,0 +1,21 @@
+@import "../styles/Colors.scss";
+
+.calculator {
+    width: 320px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.line-buttons {
+}
+
+.display-calculator {
+    height: 180px;
+}
+
+
+.output-results {
+    font-size: 35px;
+    color: $color-text;
+}
