@@ -115,7 +115,7 @@ class Calculator extends Component {
         </div>
 
         <div className="buttons margin-bottom-40">
-          <div className="line-buttons margin-left-20 margin-right-20 display-flex space-around">
+          <div className="line-buttons margin-left-20 margin-right-20 margin-bottom-10 margin-top-10 display-flex space-around">
             <Button
               value="%"
               type={ButtonType.operator}
@@ -137,7 +137,7 @@ class Calculator extends Component {
               onClickItem={this.handleOnClick}
             />
           </div>
-          <div className="line-buttons margin-left-20 margin-right-20 display-flex space-around">
+          <div className="line-buttons margin-left-20 margin-right-20 margin-bottom-10 margin-top-10 display-flex space-around">
             <Button value="1" onClickItem={this.handleOnClick} />
             <Button value="2" onClickItem={this.handleOnClick} />
             <Button value="3" onClickItem={this.handleOnClick} />
@@ -147,7 +147,7 @@ class Calculator extends Component {
               onClickItem={this.handleOnClick}
             />
           </div>
-          <div className="line-buttons margin-left-20 margin-right-20 display-flex space-around">
+          <div className="line-buttons margin-left-20 margin-right-20 margin-bottom-10 margin-top-10 display-flex space-around">
             <Button value="4" onClickItem={this.handleOnClick} />
             <Button value="5" onClickItem={this.handleOnClick} />
             <Button value="6" onClickItem={this.handleOnClick} />
@@ -157,7 +157,7 @@ class Calculator extends Component {
               onClickItem={this.handleOnClick}
             />
           </div>
-          <div className="line-buttons margin-left-20 margin-right-20 display-flex space-around">
+          <div className="line-buttons margin-left-20 margin-right-20 margin-bottom-10 margin-top-10 display-flex space-around">
             <Button value="7" onClickItem={this.handleOnClick} />
             <Button value="8" onClickItem={this.handleOnClick} />
             <Button value="9" onClickItem={this.handleOnClick} />
@@ -167,7 +167,7 @@ class Calculator extends Component {
               onClickItem={this.handleOnClick}
             />
           </div>
-          <div className="line-buttons margin-left-20 margin-right-20 display-flex space-around">
+          <div className="line-buttons margin-left-20 margin-right-20 margin-bottom-10 margin-top-10 display-flex space-around">
             <Button value="00" onClickItem={this.handleOnClick} />
             <Button value="0" onClickItem={this.handleOnClick} />
             <Button value="." onClickItem={this.handleOnClick} />
